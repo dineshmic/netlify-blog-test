@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "first push"
+git remote add origin https://github.com/dineshmic/my-blog.git
+git push -u -f origin master

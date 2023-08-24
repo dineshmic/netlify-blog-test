@@ -1,0 +1,84 @@
+---
+title: Blogs
+layout: 'base.njk'
+---
+	
+
+	
+	<!--=============================Section 1===============================-->
+	<div class="section1">
+		<div class="container">
+			<h1 class="blog-page-header-w-100 text-center"><span>Our</span> Blog</h1>
+			
+			<div class="row mt-5 d-flex align-items-stretch">
+				
+				{%- for post in collections.post | reverse -%}
+
+				<!--=============================blog 1===============================-->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="blog-card h-100">
+						<!--=============================blog Image===============================-->
+						<img src="{{ post.data.image }}" alt="...">
+						<h3>{{ post.data.title }}</h3> 
+						<!--=============================blog pill buttons===============================-->
+						<div class="row mt-3">
+							<div class="col-md-8 d-flex mb-2">
+								<button class="blog-tab-pill-sm">{{ post.data.category }}</button>
+								<button class="blog-tab-pill-sm">{{ post.data.author }}</button>
+							</div>
+							<div class="col-md-4 d-flex mb-2">
+								<button class="blog-tab-pill-sm">{{ post.data.date | postDate }}</button>
+							</div>
+						</div>
+						<!--=============================blog data===============================-->
+						<p>{{ post.data.description }}<a href="{{ post.url }}" class="link-4"> Read more &gt;</a></p>
+					</div>
+				</div>
+
+				{%- endfor -%}
+
+			</div>
+			
+		</div>
+	</div>
+
+
+
+	{#
+					<!--=============================blog 1===============================-->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="blog-card">
+						<!--=============================blog Image===============================-->
+						<img src="assets/images/blog-card-img.png" alt="...">
+						<h3>Assembling Your Dream AI Team: The Key to Success</h3> 
+						<!--=============================blog pill buttons===============================-->
+						<div class="row mt-3">
+							<div class="col-md-8 d-flex mb-2">
+								<button class="blog-tab-pill-sm">AI Team Building</button>
+								<button class="blog-tab-pill-sm">User</button>
+							</div>
+							<div class="col-md-4 d-flex mb-2">
+								<button class="blog-tab-pill-sm">15 Sep 2021</button>
+							</div>
+						</div>
+						<!--=============================blog data===============================-->
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint....<a href="blog-1.html" class="link-4"> Read more &gt;</a></p>
+					</div>
+				</div>
+	
+	#}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
