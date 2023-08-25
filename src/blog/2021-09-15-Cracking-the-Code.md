@@ -1,7 +1,7 @@
 ---
 title: "Cracking the Code: The Real Salary Range of AI Engineers"
 author: Boomer Baker
-date: 2021-09-15
+date: '2021-09-15'
 tags: ["post", "featured"]
 category: AI Team Building
 image: /assets/images/blog/blog-img-1.png

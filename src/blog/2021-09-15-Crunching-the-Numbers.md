@@ -1,7 +1,7 @@
 ---
 title: "Crunching the Numbers: How Much Does It Really Cost to Hire an AI Engineer?"
 author: Boomer Baker
-date: 2021-09-15
+date: '2021-09-15'
 tags: ["post", "featured"]
 category: AI Team Building
 image: /assets/images/blog/blog-img-3.png
