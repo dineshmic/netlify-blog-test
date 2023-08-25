@@ -27,7 +27,7 @@ layout: 'base.njk'
 								<button class="blog-tab-pill-sm">{{ post.data.author }}</button>
 							</div>
 							<div class="col-md-4 d-flex mb-2">
-								<button class="blog-tab-pill-sm">{{ post.data.date }}</button>
+								<button class="blog-tab-pill-sm">{{ post.data.date | postDate }}</button>
 							</div>
 						</div>
 						<!--=============================blog data===============================-->
