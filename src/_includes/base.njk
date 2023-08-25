@@ -26,5 +26,16 @@
   }
 </script>
 
+<script>
+function convertDate(getCMSdate){
+	var cmsDate = getCMSdate.date;
+	var dateObject = new Date(cmsDate);
+	var formattedDate = dateObject.toISOString().split("T")[0];
+	return formattedDate;
+
+}
+
+</script>
+
 </body>
 </html>

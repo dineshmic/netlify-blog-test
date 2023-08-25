@@ -27,7 +27,12 @@ layout: 'base.njk'
 								<button class="blog-tab-pill-sm">{{ post.data.author }}</button>
 							</div>
 							<div class="col-md-4 d-flex mb-2">
-								<button class="blog-tab-pill-sm">{{ post.data.date | postDate }}</button>
+								<button class="blog-tab-pill-sm">
+								<script>
+									document.write(convertDate({{ post.data.date }}));
+								</script>
+								</button>
+
 							</div>
 						</div>
 						<!--=============================blog data===============================-->
@@ -41,44 +46,3 @@ layout: 'base.njk'
 			
 		</div>
 	</div>
-
-
-
-	{#
-					<!--=============================blog 1===============================-->
-				<div class="col-md-6 col-lg-4 mb-4">
-					<div class="blog-card">
-						<!--=============================blog Image===============================-->
-						<img src="assets/images/blog-card-img.png" alt="...">
-						<h3>Assembling Your Dream AI Team: The Key to Success</h3> 
-						<!--=============================blog pill buttons===============================-->
-						<div class="row mt-3">
-							<div class="col-md-8 d-flex mb-2">
-								<button class="blog-tab-pill-sm">AI Team Building</button>
-								<button class="blog-tab-pill-sm">User</button>
-							</div>
-							<div class="col-md-4 d-flex mb-2">
-								<button class="blog-tab-pill-sm">15 Sep 2021</button>
-							</div>
-						</div>
-						<!--=============================blog data===============================-->
-						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint....<a href="blog-1.html" class="link-4"> Read more &gt;</a></p>
-					</div>
-				</div>
-	
-	#}
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
