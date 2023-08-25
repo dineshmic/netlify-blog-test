@@ -1,16 +1,11 @@
-const { DateTime } = require('luxon'); // Import Luxon's DateTime module
+const { DateTime } = require('luxon'); 
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/assets');
     eleventyConfig.addPassthroughCopy('./src/admin');
     eleventyConfig.addFilter("postDate", (dateObj) => {
-        // Remove single quotes from the dateObj string
-        const dateStringWithoutQuotes = dateObj.replace(/'/g, '');
-        
-        // Parse the date string using Luxon's DateTime
-        const parsedDate = DateTime.fromJSDate(new Date(dateStringWithoutQuotes));
-        
-        // Format the parsed date as a localized date string
+        var dateStringWithoutQuotes = dateObj.replace(/'/g, '');
+        var parsedDate = DateTime.fromJSDate(new Date(dateStringWithoutQuotes));
         return parsedDate.toLocaleString(DateTime.DATE_MED);
     });
     
