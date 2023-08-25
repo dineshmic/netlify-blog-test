@@ -16,7 +16,7 @@ collections:
     - {label: "Category", name: "category", widget: "string"}
     - {label: "Description", name: "description", widget: "string"}
     - {label: "Author", name: "author", widget: "string"}
-    - {label: "Date", name: "date", widget: "datetime", default: "", date_format: "MM/DD/YYYY", format: "MM-DD-YYYY HH:mm ZZ", picker_utc: true}
+    - {label: "Date", name: "date", widget: "date"}
     - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
     - {label: "Featured Image", name: "image", widget: "image"}
     - {label: "Image Caption", name: "imageAlt", widget: "string"}
