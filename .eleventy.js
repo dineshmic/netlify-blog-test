@@ -11,8 +11,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('./src/assets');
 	eleventyConfig.addPassthroughCopy('./src/admin');
 	eleventyConfig.addFilter("postDate", (dateObj) => {
-		var dateStringWithoutQuotes = dateObj.replace(/'/g, '');
-		return DateTime.fromJSDate(new Date(dateStringWithoutQuotes)).toLocaleString(DateTime.DATE_MED);
+		return DateTime.fromJSDate(new Date(dateObj.replace(/'/g, ''))).toLocaleString(DateTime.DATE_MED);
 	});
 	
 	
