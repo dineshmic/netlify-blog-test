@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
     
     eleventyConfig.addFilter("postDate", (dateObj) => {
         // Parse the date string directly using Luxon's DateTime
-        const parsedDate = DateTime.fromISO(dateObj3); 
+        const parsedDate = DateTime.fromISO(dateObj4); 
         
         // Format the parsed date as a localized date string
         return parsedDate.toLocaleString(DateTime.DATE_MED);
